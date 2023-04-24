@@ -5,7 +5,7 @@ setup(
     version="0.0.1",
     entry_points={
         'console_scripts':[
-            'chas=PyCHAS.chas:chas'
+            'chas=PyCHAS.chas:entry'
         ]
     },
 )

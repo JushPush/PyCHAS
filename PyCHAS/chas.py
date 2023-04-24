@@ -638,7 +638,7 @@ def chas(toplevel_file, output) -> List[str]:
         for line in lines:
             of.write(line)
 
-if __name__ == '__main__':
+def entry():
     parser = argparse.ArgumentParser(
         description=r"""Creates single-header libraries from given top-level input file.""",
         epilog="""If output exists and is a directory, the file is saved inside with the same name as the input.""")
@@ -663,3 +663,6 @@ if __name__ == '__main__':
     else: os.makedirs(os.path.dirname(output), exist_ok=True)
 
     chas(args.file, output)
+
+if __name__ == '__main__':
+    entry()
