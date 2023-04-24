@@ -195,7 +195,7 @@ def sort_copyrights(copyrights: List[str]) -> List[str]:
 
     return output
 
-def chas():
+def chas(toplevel_file, output) -> List[str]:
     base_directory = os.path.dirname(toplevel_file)
 
     write_comments = True
