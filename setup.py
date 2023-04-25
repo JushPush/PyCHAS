@@ -5,7 +5,7 @@ DESC="Python C/C++ header amalgamation script"
 
 classifiers = [
     "Intended Audience :: Developers",
-    "License :: MIT",
+    "License :: OSI Approved :: BSD License",
     "Natural Language :: English",
     "Operating System :: MacOS :: MacOS X",
     "Operating System :: POSIX",
@@ -13,12 +13,12 @@ classifiers = [
     "Operating System :: POSIX :: Linux",
     "Operating System :: Microsoft :: Windows",
     "Programming Language :: Python",
-    "Programming Langyage :: Python :: 3",
-    "Programming Langyage :: Python :: 3 :: Only",
-    "Programming Langyage :: Python :: 3.7",
-    "Programming Langyage :: Python :: 3.8",
-    "Programming Langyage :: Python :: 3.9",
-    "Programming Langyage :: Python :: 3.10",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
 ]
 
 kw = {
