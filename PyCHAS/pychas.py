@@ -1,6 +1,12 @@
-# Copyright goes here
+#
+# Copyright (c) 2023 Kara Wilson.
+#
+# This file is part of PyCHAS
+# (see https://github.com/EinKara/PyCHAS/).
+#
+# License: 3-clause BSD, see https://opensource.org/licenses/BSD-3-Clause#
 
-# Based off of Corrade ACME, however modified and maintained for modern C++
+# Based off of Corrade ACME. Modified and maintained for modern C++, with some extra features.
 
 import argparse
 import codecs
@@ -197,7 +203,7 @@ def sort_copyrights(copyrights: List[str]) -> List[str]:
 
     return output
 
-def chas(toplevel_file, output) -> List[str]:
+def pychas(toplevel_file, output) -> List[str]:
     base_directory = os.path.dirname(toplevel_file)
 
     write_comments = True
@@ -664,4 +670,4 @@ def main():
     # don't exist
     else: os.makedirs(os.path.dirname(output), exist_ok=True)
 
-    chas(args.file, output)
+    pychas(args.file, output)

@@ -1,19 +1,46 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
-VERSION = '1.0.0'
+VERSION = '1.0.1'
 DESC="Python C/C++ header amalgamation script"
 
-setup(
-    name="PyCHAS",
-    version=VERSION,
-    description=DESC,
-    long_description=DESC,
-    author="NotOkay",
-    author_email="contact@notokay.dev",
-    license='MIT',
-    entry_points={
-        'console_scripts':[
-            'chas=PyCHAS.chas:main'
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: MIT",
+    "Natural Language :: English",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: BSD",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Langyage :: Python :: 3",
+    "Programming Langyage :: Python :: 3 :: Only",
+    "Programming Langyage :: Python :: 3.7",
+    "Programming Langyage :: Python :: 3.8",
+    "Programming Langyage :: Python :: 3.9",
+    "Programming Langyage :: Python :: 3.10",
+]
+
+kw = {
+    "name": "PyCHAS",
+    "version": VERSION,
+    "description": "Python C/C++ header amalgamation script",
+    "long_description": "Python C/C++ header amalgamation script",
+
+    "license": "MIT",
+    "author": "NotOkay",
+    "author_email": "contact@notokay.dev",
+    "url": "https://notokay.dev/",
+    "classifiers": classifiers,
+    "entry_points": {
+        "console_scripts":[
+            "pychas=PyCHAS.pychas:main"
         ]
     },
-)
+
+    "python_requires": ">=3.7",
+    "packages": find_packages(),
+}
+
+if __name__ == '__main__':
+    setup(**kw)

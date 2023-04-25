@@ -10,5 +10,21 @@ Python C/C++ header amalgamation script
 ## Usage
 
 ```console
-$ chas -h
+$ pychas -h
+usage: pychas [-h] [-o OUTPUT] [--debug] file
+
+Creates single-header libraries from given top-level input
+file.
+
+positional arguments:
+  file                  top-level file
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -o OUTPUT, --output OUTPUT
+                        output file or directory
+  --debug               verbose debug output
+
+If output exists and is a directory, the file is saved
+inside with the same name as the input.
 ```

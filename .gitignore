@@ -1,2 +1,4 @@
+# Build outputs
 dist/
 PyCHAS.egg-info/
+build/
