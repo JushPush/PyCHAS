@@ -1,6 +1,6 @@
 from setuptools import setup
 
-VERSION = '0.0.1'
+VERSION = '1.0.0'
 DESC="Python C/C++ header amalgamation script"
 
 setup(
@@ -13,7 +13,7 @@ setup(
     license='MIT',
     entry_points={
         'console_scripts':[
-            'chas=PyCHAS.chas:entry'
+            'chas=PyCHAS.chas:main'
         ]
     },
 )

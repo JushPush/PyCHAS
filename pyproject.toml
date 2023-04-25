@@ -4,9 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "PyCHAS"
-version = "0.0.1"
+version = "1.0.0"
 readme = "README.md"
 description = "Python C/C++ header amalgamation script"
 
 [project.scripts]
-chas = "PyCHAS.chas:chas"
+chas = "PyCHAS.chas:main"
