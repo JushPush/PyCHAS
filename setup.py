@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '1.0.1'
+VERSION = '1.0.2'
 DESC="Python C/C++ header amalgamation script"
 
 classifiers = [
@@ -32,6 +32,10 @@ kw = {
     "author_email": "contact@notokay.dev",
     "url": "https://notokay.dev/",
     "classifiers": classifiers,
+    "project_urls": {
+        "Source": "https://github.com/EinKara/PyCHAS/",
+        "Sponsor": "https://github.com/sponsors/EinKara/"
+    },
     "entry_points": {
         "console_scripts":[
             "pychas=PyCHAS.pychas:main"

@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "PyCHAS"
-version = "1.0.1"
+version = "1.0.2"
 readme = "README.md"
 description = "Python C/C++ header amalgamation script"
 authors = [
-    { name = "NotOkay", email = "contact@notokay.dev" }
+    { name = "Kara", email = "contact@notokay.dev" }
 ]
 license = {text = "MIT"}
 requires-python = ">=3.7"
@@ -30,8 +30,9 @@ classifiers = [
     'Programming Language :: Python :: 3.10',
 ]
 
-[tool.poetry.urls]
+[project.urls]
 "Source" = "https://github.com/EinKara/PyCHAS/"
+"Sponsor" = "https://github.com/sponsors/EinKara/"
 
 [project.scripts]
 pychas = "PyCHAS.pychas:main"

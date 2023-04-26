@@ -41,7 +41,7 @@ pragma_once_rx = re.compile(r'^#pragma\s+once$')
 copyright_email_rx = re.compile(r'<[^@]+@[^>]+>')
 copyright_year_rx = re.compile(r'\d\d\d\d')
 
-modifiers_rx = re.compile(r'^#pragma\s+CHAS\s+(?P<what>[^\s]+)\s*(?P<value>[^\s]?.*)\s*$')
+modifiers_rx = re.compile(r'^#pragma\s+PYCHAS\s+(?P<what>[^\s]+)\s*(?P<value>[^\s]?.*)\s*$')
 
 files_to_skip = []
 
